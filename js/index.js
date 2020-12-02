@@ -15,10 +15,26 @@ logoHead.addEventListener('mouseleave', function(event){
     logoHead.innerText = 'Fun Bus'
 });
 
-const image = document.querySelectorAll('img')
+const title = document.querySelector('title')
+title.addEventListener('load', function(event){
+    title.innerText = 'BUS TIME!'
+})
+const header = document.querySelector('.intro')
+header.addEventListener('dblclick', function(event){
+    header.innerText = 'BUS TIME!!!';
+    header.style.fontSize = '10rem'
+    header.style.color = 'red'
+});
 
+const introImg = header.querySelector('img')
+introImg.addEventListener('auxclick', function(event){
+    introImg.setAttribute('src', "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg")
+})
 
-
+// introH2 = header.querySelector('h2');
+// introH2.addEventListener('context', function(event){
+//     introH2.innerText = 'HAHA YOU FOUND ME!'
+// });
 
 // image.addEventListener()
 // image.addEventListener('dblclick', function(event){
