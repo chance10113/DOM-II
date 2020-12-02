@@ -42,7 +42,19 @@ wordH2.addEventListener('mouseover', function(event){
     wordH2.style.color = "red"
     wordH2.style.fontSize = '10rem'
 })
+const inverse = document.querySelector('.img-content');
+const invImg = inverse.querySelector('img');
+invImg.addEventListener('wheel', function(event){
+    invImg.setAttribute('src', "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg")
+})
 
+const contDest = document.querySelector(".content-destination");
+const contDestP = contDest.querySelector('p');
+contDestP.addEventListener('contextmenu', function(event){
+    contDestP.innerText = "Feature closed due to Pandemic"
+    contDestP.style.fontSize = "15rem"
+    contDestP.style.color = "red"
+})
 // KEYDOWN AND KEYUP!!!
 // introH2 = header.querySelector('h2');
 // introH2.addEventListener('context', function(event){
