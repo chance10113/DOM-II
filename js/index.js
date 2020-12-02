@@ -31,6 +31,19 @@ introImg.addEventListener('auxclick', function(event){
     introImg.setAttribute('src', "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg")
 })
 
+const wordStuff = document.querySelector('.text-content');
+const wordP = wordStuff.querySelector('p')
+wordP.addEventListener('mousemove', function(event){
+    wordP.innerText = "HAHA YOU FOUND ME!"
+});
+const wordH2 = wordStuff.querySelector('h2')
+wordH2.addEventListener('mouseover', function(event){
+    wordH2.innerText = 'CAN YOU FIND ME?!'
+    wordH2.style.color = "red"
+    wordH2.style.fontSize = '10rem'
+})
+
+// KEYDOWN AND KEYUP!!!
 // introH2 = header.querySelector('h2');
 // introH2.addEventListener('context', function(event){
 //     introH2.innerText = 'HAHA YOU FOUND ME!'
