@@ -10,6 +10,7 @@ Array.from(NavA).forEach(function(link){
 const logoHead = document.querySelector('.logo-heading');
 logoHead.addEventListener('mouseenter', function(event){
     logoHead.innerText = 'FART BUS'
+    logoHead.stopImmediatePropogation()
 });
 logoHead.addEventListener('mouseleave', function(event){
     logoHead.innerText = 'Fun Bus'
