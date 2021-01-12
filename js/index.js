@@ -55,3 +55,21 @@ function keyUp(event) {
 }
 document.addEventListener('keydown', keyUp)
 //Good golly, just 2 more I guess
+
+const inverse = document.querySelector('.inverse-content')
+    const inverseH2 = inverse.querySelector('h2')
+        inverseH2.addEventListener('wheel', () => {
+            inverseH2.innerText = "Generic Movie Quote number 5"
+        })
+    const inversePara = inverse.querySelector('p')
+        inversePara.addEventListener('contextmenu', () => {
+            inversePara.innerText = "Generic Movie Quote Number 77"
+        })
+//NAV STUFF
+const NavA = document.querySelectorAll('.nav-link');
+Array.from(NavA).forEach(function(link){
+    link.addEventListener('click', function(event){
+        console.log("This is to prevent the link");
+        event.preventDefault();
+    })
+})
