@@ -30,3 +30,15 @@ const tCPara = textContent.querySelector('p')
         tCPara.innerText = "'Is a sandwich really a sandwich without butter?'"
     })
 //Just 4 More, we got this!
+const imgContent = document.querySelector('.img-content img')
+    document.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") {
+            imgContent.innerHTML = ('src', "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg")
+        }
+    });
+    function escapeKey(event) {
+        if (event.key === "Escape") {
+            imgContent.setAttribute('src', "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg")
+        }
+    }
+document.addEventListener('keydown', escapeKey)
