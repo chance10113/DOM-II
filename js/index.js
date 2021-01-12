@@ -42,3 +42,16 @@ const imgContent = document.querySelector('.img-content img')
         }
     }
 document.addEventListener('keydown', escapeKey)
+//KEY-UP
+document.addEventListener('keyup', (event) => {
+    if (event.key === "Escape") {
+        imgContent.innerHTML = ('src', "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+    }
+});
+function keyUp(event) {
+    if (event.key === "Escape") {
+        imgContent.setAttribute('src', "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+    }
+}
+document.addEventListener('keydown', keyUp)
+//Good golly, just 2 more I guess
